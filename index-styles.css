@@ -3,17 +3,37 @@ p {
 }
 
 #mast-head {
+    /* display: grid; */
+    /* align-items: center; */
     background-color: black;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
     width: 100%;
     height: 100px;
-    align-items: center;
-
 }
 
+.gradient {
+    /* display: grid;
+    grid-template-columns: 2fr 1fr; */
+    background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    vertical-align: middle;
+    animation: bg-animation 5s infinite alternate;
+    /* doesnt work with grid, develop new layering system */
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+
+
+
 .mast-head-items {
-    color: white;
     font-family: Roboto;
 }
 
@@ -32,3 +52,5 @@ body {
     height: 4000px;
     margin: 0;
 }
+
+
