@@ -1,0 +1,12 @@
+#mast-head {
+    background-color: black;
+}
+
+.mast-head-items {
+
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
